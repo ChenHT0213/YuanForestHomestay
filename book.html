@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>原森林 - 訂房</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.svg">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Google Visualization js -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Booking Form JS -->
+    <script type="text/javascript">
+        function bookformresponse() {
+            var name = document.forms['book-form']['book-name'].value;
+            var mail = document.forms['book-form']['book-mail'].value;
+            var date = document.forms['book-form']['book-date'].value;
+            var room = document.forms['book-form']['book-room'].value;
+            var mesg = document.forms['book-form']['book-message'].value;
+            var d = new Date();
+            var dd = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 8);
+            var ddate = new Date(date);
+            if (name == null || name == '') {
+                alert('姓名不可為空白');
+                return false;
+            } else if (mail == null || mail == '') {
+                alert('電子郵件不可為空白');
+                return false;
+            } else if (date == null || date == '') {
+                alert('請選擇入住日期');
+                return false;
+            } else if (room == null || room == '') {
+                alert('請選擇房型');
+                return false;
+            } else if (Math.floor((ddate - dd) / 1000 * 60 * 60 * 24) < 8) {
+                alert('請於入住日7天前訂房');
+                return false;
+            } else {
+                var BookSubmit = 'https://docs.google.com/forms/d/e/1FAIpQLSf5mbK8wBH1tNoMQpvWDIDkNdBfMQjHQpPVmKEDqzSl6dRyqg/formResponse?usp=pp_url&entry.324959921=' + name + '&entry.246554073=' + mail + '&entry.372346222=' + date + '&entry.58590372=' + room + '&entry.1841745940=' + mesg + '&submit=Submit';
+                var OpenWin = window.open(BookSubmit);
+                OpenWin.close();
+                document.forms['book-form'].reset();
+                alert('已成功訂房，可供查詢訂房狀態');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="sonar-load"></div>
+        </div>
+    </div>
+
+    <!-- ***** Main Menu Area ***** -->
+    <div class="mainMenu d-flex align-items-center justify-content-between">
+        <!-- Close Icon -->
+        <div class="closeIcon">
+            <i class="ti-close" aria-hidden="true"></i>
+        </div>
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="index.html">原森林</a>
+        </div>
+        <!-- Nav -->
+        <div class="sonarNav wow fadeInUp" data-wow-delay="1s">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="room.html">房型介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recommendatoin.html">推薦行程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traffic.html">交通資訊</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="book.html">立即訂房</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.sunmoonlake.com.tw/index.html" target="blank">日月潭．原森林官網</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ***** Navbar ***** -->
+    <header class="header-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-area d-flex justify-content-between">
+                        <!-- Logo Area  -->
+                        <div class="logo-area">
+                            <a href="index.html">日月潭．原森林</a>
+                        </div>
+                        <!-- Menu Icon -->
+                        <div class="menu-content-area d-flex align-items-center">
+                            <span class="navbar-toggler-icon" id="menuIcon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ***** Header ***** -->
+    <div class="hero-area d-flex align-items-center">
+        <!-- Back End Content -->
+        <div class="backEnd-content">
+            <img class="dots" src="img/core-img/dots.png">
+        </div>
+
+        <!-- Header Thumbnail -->
+        <div class="hero-thumbnail aboutUs equalize bg-img" style="background-image: url(img/bg-img/book.jpg);"></div>
+
+        <!-- Header Content -->
+        <div class="hero-content aboutUs equalize">
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-10">
+                        <div class="line"></div>
+                        <h2>訂房</h2>
+                        <p>為你保留你最喜歡的房型</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sonar-contact-area section-padding-100" id="booking">
+        <div class="backEnd-content">
+            <img class="dots" src="img/core-img/dots.png">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Book Form Area -->
+                <div class="col-12 my-5">
+                    <div class="contact-form text-center">
+                        <h4 class="mb-2">訂房</h4>
+                        <p class="mb-4">請於入住日7天前訂房</p>
+                        <form name="book-form" action="javascript:bookformresponse();" method="post">
+                            <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="book-name" id="contact-name" placeholder="姓名">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="book-mail" id="contact-mail" placeholder="電子郵件">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" name="book-date" id="contact-date" placeholder="入住日期">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-group">
+                                        <select class="form-control height-60" name="book-room" id="room-type">
+                                            <option value="" selected>..選擇房型..</option>
+                                            <option value="日出星空房">日出星空房</option>
+                                            <option value="全景星空房">全景星空房</option>
+                                            <option value="森林星空房">森林星空房</option>
+                                            <option value="星空城堡親子房">星空城堡親子房</option>
+                                            <option value="森林親子房">森林親子房</option>
+                                            <option value="日出雙人房">日出雙人房</option>
+                                            <option value="頂級森林雙人房">頂級森林雙人房</option>
+                                            <option value="景觀雙人房">景觀雙人房</option>
+                                            <option value="日出四人房">日出四人房</option>
+                                            <option value="森林四人房">森林四人房</option>
+                                            <option value="和室四人房">和室四人房</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="book-message" id="message" cols="30" rows="10" placeholder="備註"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn sonar-btn">立即訂房</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Search Form Area -->
+                <div class="col-12 my-5">
+                    <div class="contact-form text-center">
+                        <h4 class="mb-2">查詢訂房狀態</h4>
+                        <form name="search-form" action="javascript:searchform();" method="post">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="search-name" id="contact-name" placeholder="姓名">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="search-mail" id="contact-mail" placeholder="電子郵件">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn sonar-btn">立即查詢訂房狀態</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Search Result Area -->
+                <div class="container justify-content-center h-100" id="search-result">
+                    <!-- search result by js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer Area ***** -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>
+                            <!-- Header Social Area -->
+                            <div class="text-center">
+                                <a href="https://www.facebook.com/yuanhomestay/" data-toggle="tooltip" data-placement="bottom" title="Facebook" target="blank"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/yuan_forest/?utm_medium=copy_link" data-toggle="tooltip" data-placement="bottom" title="Instagram" target="blank"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                                <a href="mailto:yuanhomestay@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Mail"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+                                <a href="tel:0978896107" data-toggle="tooltip" data-placement="bottom" title="Telephone"><i class="bi bi-telephone-fill" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- Copywrite Text -->
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> &copy;
+                            <a href="http://www.sunmoonlake.com.tw/index.html" target="blank">Sunmoonlake Yuan Forest Homestay</a> All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <!-- Search Book js -->
+    <script>
+        $(document).ready(function() {
+            $("body").getNiceScroll().remove();
+        });
+
+        function clearsearchresult() {
+            document.getElementById('search-result').innerHTML = '';
+        }
+
+        function searchform() {
+            checksearch();
+
+            // 檢查欄位是否為空值
+            function checksearch() {
+                var name = document.forms['search-form']['search-name'].value;
+                var mail = document.forms['search-form']['search-mail'].value;
+                if (name == null || name == '') {
+                    alert('姓名不可為空白');
+                    return false;
+                } else if (mail == null || mail == '') {
+                    alert('電子郵件不可為空白');
+                    return false;
+                } else {
+                    searchformresponse();
+                }
+            }
+
+            // 取得指定的資料表內容
+            function searchformresponse() {
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(init);
+
+                function init() {
+                    var name = document.forms['search-form']['search-name'].value;
+                    var mail = document.forms['search-form']['search-mail'].value;
+                    var url = 'https://docs.google.com/spreadsheets/d/1un7_gWyQCIeIJLHJ330mVKYdwzqJ6_gWs5dSshcw2yk/gviz/tq?sheet=Project-訂房表單 (回覆)';
+                    var query = new google.visualization.Query(url);
+                    if (name == 'all' && mail == 'all@gmail.com') {
+                        // 若name跟mail都輸入指定的值，能查看所有訂單
+                        query.setQuery('select *');
+                    } else {
+                        // 查看搜尋條件篩選後的訂單
+                        query.setQuery('select * where B = "' + name + '" and C ="' + mail + '"');
+                    }
+                    query.send(processSheetsData);
+                }
+            }
+
+            // 列出訂單內容，若查無內容則顯示查無資料
+            function processSheetsData(response) {
+                if (response.isError()) {
+                    alert(response.getMessage() + '' + response.getDetailedMessage());
+                    return false;
+                }
+                var data = response.getDataTable();
+                var rows = data.getNumberOfRows();
+
+                var str = '';
+                if (rows != 0) {
+                    str += '<center>';
+                    str += '<table class="text-center table table-hover">';
+                    str += '    <tr>';
+                    str += '        <th scope="col">#</th>';
+                    str += '        <th scope="col">姓名</th>';
+                    str += '        <th scope="col">入住日期</th>';
+                    str += '        <th scope="col">房型</th>';
+                    str += '        <th scope="col">備註</th>';
+                    str += '        <th scope="col">狀態</th>';
+                    str += '    </tr>';
+
+                    for (var r = 0; r < rows; r++) {
+                        var pro = data.getFormattedValue(r, 6);
+                        var fin = data.getFormattedValue(r, 7);
+                        var fai = data.getFormattedValue(r, 8);
+                        var status = checkstatus(pro, fin, fai);
+                        str += '<tr>';
+                        str += '    <th scope="col">' + (r + 1) + '</th>';
+                        str += '    <td>' + data.getFormattedValue(r, 1) + '</td>';
+                        str += '    <td>' + data.getFormattedValue(r, 3) + '</td>';
+                        str += '    <td>' + data.getFormattedValue(r, 4) + '</td>';
+                        str += '    <td>' + data.getFormattedValue(r, 5) + '</td>';
+                        str += '    <td>' + status + '</td>';
+                        str += '</tr>';
+                    }
+
+                    str += '</table>';
+                    str += '<button class="btn sonar-btn btn-2 mt-2" onclick="clearsearchresult()">清除查詢結果</button>';
+                    str += '</center>';
+                } else {
+                    str = '<center><p>查無資料</p></center>';
+                }
+
+
+                document.getElementById('search-result').innerHTML = str;
+                document.forms['search-form'].reset();
+            }
+
+            // 決定訂單狀態
+            function checkstatus(pro, fin, fai) {
+                if (fai != '') {
+                    return '訂房失敗';
+                } else if (fin != '') {
+                    return '訂房成功';
+                } else if (pro != '') {
+                    return '訂單處理中';
+                } else {
+                    return '訂單待處理';
+                }
+            }
+        };
+    </script>
+</body>
+
+</html>

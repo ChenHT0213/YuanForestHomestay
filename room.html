@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>原森林 - 房型介紹</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.svg">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Google Visualization js -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="sonar-load"></div>
+        </div>
+    </div>
+
+    <!-- ***** Main Menu Area ***** -->
+    <div class="mainMenu d-flex align-items-center justify-content-between">
+        <!-- Close Icon -->
+        <div class="closeIcon">
+            <i class="ti-close" aria-hidden="true"></i>
+        </div>
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="index.html">原森林</a>
+        </div>
+        <!-- Nav -->
+        <div class="sonarNav wow fadeInUp" data-wow-delay="1s">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="room.html">房型介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recommendatoin.html">推薦行程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traffic.html">交通資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">立即訂房</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.sunmoonlake.com.tw/index.html" target="blank">日月潭．原森林官網</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ***** Navbar ***** -->
+    <header class="header-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-area d-flex justify-content-between">
+                        <!-- Logo Area  -->
+                        <div class="logo-area">
+                            <a href="index.html">日月潭．原森林</a>
+                        </div>
+                        <!-- Menu Icon -->
+                        <span class="navbar-toggler-icon" id="menuIcon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- ***** Header ***** -->
+    <div class="hero-area d-flex align-items-center">
+        <!-- Hero Thumbnail -->
+        <div class="hero-thumbnail equalize bg-img" style="background-image: url(img/bg-img/room.jpg);"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content equalize">
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <div class="line"></div>
+                        <h2>房型介紹</h2>
+                        <p>自然寧靜的森林...</p>
+                        <a href="book.html" class="btn sonar-btn white-btn">前往訂房</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ****** Rooms Map ****** -->
+    <section class="sonar-projects-area" id="projects">
+        <div class="container-fluid">
+            <div class="row sonar-portfolio h-100" id="rooms-list">
+                <!-- 房型清單 by js -->
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="book.html" class="btn sonar-btn mt-2 mb-5">前往訂房</a>
+                </div>
+            </div>
+
+            <!-- Instruction -->
+            <center>
+                <div class="mt-5 text-start border border-danger rounded m-sm-3 w-80 text-black-75 wow fadeInUpBig">
+                    <h3 class="m-sm-3 text-center text-black font-bold">住房須知</h3>
+                    <ul class="me-3 fs-15px pb-4">
+                        <li class="list-decimal mt-3">進房時間(Check-in time)：15:00，退房時間(Check-out time)：11:00；若超過退房時間半小時以上，得酌收費用（每小時＄500元）。</li>
+                        <li class="list-decimal mt-3">如會晚到請提前告知，當天若聯絡不上，最晚保留房間至18：00。訂金不予退還。</li>
+                        <li class="list-decimal mt-3">人數限制：</li>
+                        <ul>
+                            <li>(1) 小孩身高超過110cm即佔床位(低於110cm，兩位算一個床位)</li>
+                            <li>(2) 每房最多加1床，加床費為1000元/人，依房型而定</li>
+                            <li>(3) 如有超住情形而未告知，本民宿有權拒絕入住，並不退還訂金</li>
+                        </ul>
+                        <li class="list-decimal mt-3">中西式活力早餐： 早餐時間：8：00~10：00AM 中西式早餐(稀飯及各式配菜、新鮮吐司、自製歐式麵包、餐包、各式高級抹醬、沙拉、水果、玉米脆片、水煮蛋、多樣性在地食材、自家烘焙及手沖單品咖啡、果汁、鮮奶、古早味日月潭紅茶...)</li>
+                        <li class="list-decimal mt-3">房間內附有空調，請勿在房內使用電熱器，以免不慎造成意外喔！</li>
+                        <li class="list-decimal mt-3">取消訂房：</li>
+                        <ul>
+                            <li>(1) 如不克前來，請於三日之前告知(Ex. 10/10入住，需於10/6(含)以前)，若訂三間以上，則需七日之前告知， 將可退還全額訂金或順延日期。未在規定期限內將無法順延或退訂金。</li>
+                            <li>(2) 如遇中央氣象局發布海上颱風警報、超大豪雨特報、天災、道路中斷等不可抗拒因素，亦可退還全額訂金，或順延日期。</li>
+                        </ul>
+                        <li class="list-decimal mt-3">謝絕寵物： 因考量部分房客對動物毛過敏，本民宿暫不提供寵物入住，如未事先告知而帶寵物來，本民宿有權拒絕入住， 並不退還訂金。</li>
+                        <li class="list-decimal mt-3">請勿喧嘩：</li>
+                        <ul>
+                            <li>(1) 為使每位住宿客人享有寧靜的環境，本民宿禁打麻將及卡拉ok...</li>
+                            <li>(2) 晚間10：00過後，請勿大聲喧嘩，若經勸阻仍不聽，本民宿有權請房客退房， 並不退還訂金</li>
+                        </ul>
+                    </ul>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!-- ***** Footer Area ***** -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>
+                            <!-- Header Social Area -->
+                            <div class="text-center">
+                                <a href="https://www.facebook.com/yuanhomestay/" data-toggle="tooltip" data-placement="bottom" title="Facebook" target="blank"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/yuan_forest/?utm_medium=copy_link" data-toggle="tooltip" data-placement="bottom" title="Instagram" target="blank"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                                <a href="mailto:yuanhomestay@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Mail"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+                                <a href="tel:0978896107" data-toggle="tooltip" data-placement="bottom" title="Telephone"><i class="bi bi-telephone-fill" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- Copywrite Text -->
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> &copy;
+                            <a href="http://www.sunmoonlake.com.tw/index.html" target="blank">Sunmoonlake Yuan Forest Homestay</a> All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Map SpreadSheets -->
+    <script>
+        $(document).ready(function() {
+            searchformresponse();
+
+            function searchformresponse() {
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(init);
+
+                function init() {
+                    var url = 'https://docs.google.com/spreadsheets/d/1QTmAMc2Jqv1WCMpDlpzYeu6ekMVi4VjyyRQQrhV-EQw/gviz/tq?sheet=Project-room';
+                    var query = new google.visualization.Query(url);
+                    query.setQuery('select A, B, I, J, K');
+                    query.send(processSheetsData);
+                }
+            }
+
+            function processSheetsData(response) {
+                if (response.isError()) {
+                    alert(response.getMessage() + '' + response.getDetailedMessage());
+                    return false;
+                }
+                var data = response.getDataTable();
+                var rows = data.getNumberOfRows();
+
+
+                //document.getElementById('rooms-list').classList.add("sonar-portfolio");
+                var str = '';
+                for (r = 0; r < rows; r++) {
+                    str += '<div class="col-12 col-sm-6 col-lg-3 single_gallery_item fashion wow fadeInUpBig ' + data.getFormattedValue(r, 3) + '" data-wow-delay="' + data.getFormattedValue(r, 4) + 'ms">';
+                    str += '<a class="gallery-img" href="room_type.html?id=' + r + '"><img src="img/room-img/' + data.getFormattedValue(r, 2) + '/' + data.getFormattedValue(r, 2) + '0.jpg">';
+                    str += '<div class="gallery-content">';
+                    str += '<h4>' + data.getFormattedValue(r, 0) + '</h4>';
+                    str += '<p>' + data.getFormattedValue(r, 1) + '</p></a>';
+                    str += '</div></div>';
+                }
+                str += '<div class="col-12 col-sm-6 col-lg-3"></div>';
+                document.getElementById('rooms-list').innerHTML = str;
+
+
+
+            }
+            $("body").getNiceScroll().remove();
+        });
+    </script>
+
+</body>
+
+</html>

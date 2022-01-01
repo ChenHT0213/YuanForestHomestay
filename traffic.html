@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>原森林 - 交通資訊</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.svg">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Google Visualization js -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="sonar-load"></div>
+        </div>
+    </div>
+
+    <!-- ***** Main Menu Area ***** -->
+    <div class="mainMenu d-flex align-items-center justify-content-between">
+        <!-- Close Icon -->
+        <div class="closeIcon">
+            <i class="ti-close" aria-hidden="true"></i>
+        </div>
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="index.html">原森林</a>
+        </div>
+        <!-- Nav -->
+        <div class="sonarNav wow fadeInUp" data-wow-delay="1s">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="room.html">房型介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recommendatoin.html">推薦行程</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="traffic.html">交通資訊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">立即訂房</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.sunmoonlake.com.tw/index.html" target="blank">日月潭．原森林官網</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- ***** Main Menu Area End ***** -->
+
+    <!-- ***** Navbar ***** -->
+    <header class="header-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-area d-flex justify-content-between">
+                        <!-- Logo Area  -->
+                        <div class="logo-area">
+                            <a href="index.html">日月潭．原森林</a>
+                        </div>
+                        <!-- Menu Icon -->
+                        <div class="menu-content-area d-flex align-items-center">
+                            <span class="navbar-toggler-icon" id="menuIcon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ***** Header ***** -->
+    <div class="hero-area d-flex align-items-center">
+        <!-- Back End Content -->
+        <div class="backEnd-content">
+            <img class="dots" src="img/core-img/dots.png">
+        </div>
+
+        <!-- Header Thumbnail -->
+        <div class="hero-thumbnail aboutUs equalize bg-img" style="background-image: url(img/bg-img/traffic.jpg);"></div>
+
+        <!-- Header Content -->
+        <div class="hero-content aboutUs equalize">
+            <div class="container-fluid h-100">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-10">
+                        <div class="line"></div>
+                        <h2>交通資訊</h2>
+                        <p>自然寧靜的森林...</p>
+                        <a href="book.html" class="btn sonar-btn white-btn">立即訂房</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Transportation ***** -->
+    <section class="sonar-blog-area section-padding-100">
+        <!-- back end content -->
+        <div class="backEnd-content">
+            <img class="dots" src="img/core-img/dots.png">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
+                        <!-- Drive -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <h5 class="text-white mb-0 font-bold">自行開車</h5>
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                </a>
+                            </h6>
+                            <div id="collapseOne" class="accordion-content collapse mt-3">
+                                <ul>
+                                    <li class="list-decimal">國道三→國道六→愛蘭交流道往日月潭方向→台21線 59.4K(過文化巷500公尺)右轉→往前200公尺→抵達</li>
+                                    <li class="list-decimal">國道三→名間 or 竹山交流道往日月潭方向→日月潭水社→台21線59.4K 左轉→往前200公尺→抵達</li>
+                                    <li class="list-decimal"><a href="http://maps.google.com.tw/maps?&daddr=23.883694, 120.919522" target="blank">導航至原森林</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Bus -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <h5 class="text-white mb-0 font-bold">搭乘巴士</h5>
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                </a>
+                            </h6>
+                            <div id="collapseTwo" class="accordion-content collapse">
+                                <div class="row d-flex">
+                                    <!-- Bus Route -->
+                                    <div class="col-12 col-lg-8 mt-3">
+                                        <ul>
+                                            <li class="list-decimal">南投客運</li>
+                                            <ul class="pl-1">
+                                                <li><a href="http://www.ntbus.com.tw/hsr6.html">台中→日月潭</a></li>
+                                                <li><a href="http://www.ntbus.com.tw/s01.html">埔里→日月潭</a></li>
+                                                <li><a href="http://www.ntbus.com.tw/s02.html">車程→水里→日月潭</a></li>
+                                                <li><a href="http://www.ntbus.com.tw/s05.html">集集→日月潭</a></li>
+                                                <li>請告訴司機大哥麻煩在<a class="gallery-img" href="img/traffic-img/busstop_NT.jpg">文化巷口站牌</a>下車，然後跟我們聯絡，我們會去接你們的</li>
+                                            </ul>
+                                            <li class="list-decimal mt-1"><a href="http://www.ntbus.com.tw/tour-sml.html">日月潭線</a></li>
+                                            <ul class="pl-1">
+                                                <li>請告訴司機大哥麻煩在<a class="gallery-img" href="img/traffic-img/busstop_SML.jpg">日月老茶廠站牌</a>下車，然後跟我們聯絡，我們會去接你們的</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                    <!-- Bus Timetable -->
+                                    <div class="col-12 col-lg-4 mt-3 d-table">
+                                        <div class="sonar-catagories-widget-area d-table-cell align-middle">
+                                            <h6>BUS 時刻表</h6>
+                                            <ul class="catagories-menu pl-2">
+                                                <li><a href="http://www.ntbus.com.tw/hsr6.html" target="blank">南投客運日月潭線</a></li>
+                                                <li><a href="http://www.ntbus.com.tw/tour-sml.html" target="blank">台灣好行</a></li>
+                                                <li><a href="https://www.thsrc.com.tw/index.html?force=1" target="blank">台灣高鐵</a></li>
+                                                <li><a href="http://www.railway.gov.tw/tw/" target="blank">台灣鐵路(台鐵)</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Chartered -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseThree">
+                                    <h5 class="text-white mb-0 font-bold">包車服務</h5>
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                </a>
+                            </h6>
+                            <div id="collapseThree" class="accordion-content collapse show mt-3">
+                                <ul>
+                                    <li class="list-decimal">台中機場→原森林→台中機場(單程)</li>
+                                    <p class="fs-10px pt-0 text-black">費用NT$2000/4人座車，NT$2500/8人座車，車程約80分鐘(直達，中間不停)</p>
+                                    <p class="fs-10px pt-0 text-black">我們的司機會在機場入境處拿著您的名牌接您們，請您留意即可。</p>
+                                    <li class="list-decimal">台中高鐵(司機會在台中高鐵1樓7號出口一般接客區接您們)→原森林→台中高鐵(單程)</li>
+                                    <p class="fs-10px pt-0 text-black">費用NT$1600/4人座車，NT$2200/8人座車，車程約60-70分鐘(直達，中間不停)。</p>
+                                    <li class="list-decimal">台中火車站/台中市區(hotel to hotel)→原森林→台中火車站/台中市區(hotel to hotel)(單程)</li>
+                                    <p class="fs-10px pt-0 text-black">費用NT$1600/4人座車，NT$2200/8人座車，車程約60-70分鐘(直達，中間不停)。</p>
+                                    <li class="list-decimal">原森林→黃慶果園→原森林(單程)</li>
+                                    <p class="fs-10px pt-0 text-black">費用NT$1500/4人座車，NT$1800/8人座車</p>
+                                    <li class="list-decimal">原森林→集集→原森林(單程)</li>
+                                    <p class="fs-10px pt-0 text-black">費用NT$1000/4人座車，NT$1200/8人座車，車程約40分鐘</p>
+                                    <li class="list-decimal">全天包車(8hr)</li>
+                                    <p class="fs-10px pt-0 text-black">費用NT$4000/4人座車 NT$6000/8人座車</p>
+                                    <li>如有需要民宿幫您們安排車子，請您提早告知民宿，方便我們優先幫您安排車輛</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Eletric Vehicle -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" aria-expanded="true" aria-controls="collapseFour" class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapseFour">
+                                    <h5 class="text-white mb-0 font-bold">環保電動車免費接送服務(Nissan Leaf)</h5>
+                                    <span class="accor-open"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="accor-close"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                </a>
+                            </h6>
+                            <div id="collapseFour" class="accordion-content collapse mt-3">
+                                <ul>
+                                    <li class="list-decimal">民宿--水社遊客中心</li>
+                                    <p class="fs-10px pt-0 text-black">民宿提供未開車來的客人免費的接送服務(為清靜的日月潭，希望大家不要每個人都開車來日月潭)，但如遇到大假期塞車時只能到環湖入口公車站，只要到了水社，要搭船遊湖、搭環湖巴士、要租腳踏車騎上CNN電視台票選的世界十大單車步道之一都很方便。</p>
+                                    <li class="list-decimal">民宿--遇見幸福Pizza--孔明廟--田螺屋餐廳--親手窯(玩陶DIY)--日月老茶廠--魚池街</li>
+                                    <p class="fs-10px pt-0 text-black">民宿提供未開車來的客人免費的接送服務(為清靜的日月潭，希望大家不要每個人都開車來日月潭)，如不想進潭區用餐，我們附近也是又好玩又好吃的地方歐！</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maps and ImageInstrction -->
+                <div class="col-12 col-md-3">
+                    <div class="sonar-blog-sidebar-area h-100" id="instru-media">
+                        <!-- maps and instru by js -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-50">
+                <div class="col-12 text-center">
+                    <a href="#" class="btn sonar-btn mt-2 mb-5">前往訂房</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer Area ***** -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>
+                            <!-- Header Social Area -->
+                            <div class="text-center">
+                                <a href="https://www.facebook.com/yuanhomestay/" data-toggle="tooltip" data-placement="bottom" title="Facebook" target="blank"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/yuan_forest/?utm_medium=copy_link" data-toggle="tooltip" data-placement="bottom" title="Instagram" target="blank"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                                <a href="mailto:yuanhomestay@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Mail"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+                                <a href="tel:0978896107" data-toggle="tooltip" data-placement="bottom" title="Telephone"><i class="bi bi-telephone-fill" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- Copywrite Text -->
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> &copy;
+                            <a href="http://www.sunmoonlake.com.tw/index.html" target="blank">Sunmoonlake Yuan Forest Homestay</a> All rights reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Map SpreadSheets -->
+    <script>
+        $(document).ready(function() {
+            searchformresponse();
+
+            function searchformresponse() {
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(init);
+
+                function init() {
+                    var url = 'https://docs.google.com/spreadsheets/d/108yFhM9hifxx2zd6hsAlJtwcVUVY4DsgpilczA2c1jE/gviz/tq?sheet=Project-map';
+                    var query = new google.visualization.Query(url);
+                    query.setQuery('select*');
+                    query.send(processSheetsData);
+                }
+            }
+
+            function processSheetsData(response) {
+                if (response.isError()) {
+                    alert(response.getMessage() + '' + response.getDetailedMessage());
+                    return false;
+                }
+                var data = response.getDataTable();
+                var rows = data.getNumberOfRows();
+                var str = '';
+                for (i = 0; i < rows; i++) {
+                    str += '<iframe src="' + data.getFormattedValue(i, 1) + '" width="250" style="border:0;" loading="lazy"></iframe>';
+                }
+                for (i = 0; i < 3; i++) {
+                    str += '<img src="img/traffic-img/googlemap_instru' + i + '.jpg" class="my-1" width="250">';
+                }
+                document.getElementById('instru-media').innerHTML = str;
+            }
+            $("body").getNiceScroll().remove();
+        });
+    </script>
+</body>
+
+</html>
