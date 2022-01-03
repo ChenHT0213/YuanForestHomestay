@@ -50,7 +50,7 @@
                 alert('請於入住日7天前訂房');
                 return false;
             } else {
-                var BookSubmit = 'https://docs.google.com/forms/d/e/1FAIpQLSf5mbK8wBH1tNoMQpvWDIDkNdBfMQjHQpPVmKEDqzSl6dRyqg/formResponse?usp=pp_url&entry.324959921=' + name + '&entry.246554073=' + mail + '&entry.372346222=' + date + '&entry.58590372=' + room + '&entry.1841745940=' + mesg + '&submit=Submit';
+                var BookSubmit = 'https://docs.google.com/forms/d/e/1FAIpQLSeFJol4JIDZr9xj7BFG_AYzCWzADVTQsq5pWj6H-B-w-r92CQ/formResponse?usp=pp_url&entry.802490231=' + name + '&entry.910716869=' + mail + '&entry.887570490=' + date + '&entry.1493381696=' + room + '&entry.1927900619=' + mesg + '&submit=Submit';
                 var OpenWin = window.open(BookSubmit);
                 OpenWin.close();
                 document.forms['book-form'].reset();
@@ -315,7 +315,7 @@
                 function init() {
                     var name = document.forms['search-form']['search-name'].value;
                     var mail = document.forms['search-form']['search-mail'].value;
-                    var url = 'https://docs.google.com/spreadsheets/d/1un7_gWyQCIeIJLHJ330mVKYdwzqJ6_gWs5dSshcw2yk/gviz/tq?sheet=Project-訂房表單 (回覆)';
+                    var url = 'https://docs.google.com/spreadsheets/d/1hdqqXLn_i9k1jpx9uKU40YHwGlXAhgvlIE1k0Y8BOAs/gviz/tq?sheet=Project-訂房表單 (回覆)';
                     var query = new google.visualization.Query(url);
                     if (name == 'all' && mail == 'all@gmail.com') {
                         // 若name跟mail都輸入指定的值，能查看所有訂單
